@@ -10,7 +10,7 @@ function NavLink({ href, text }) {
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-around p-4 w-full text-lg">
+    <nav className="absolute lg:relative top flex items-center justify-around p-4 w-full text-lg">
       <div className="flex-1 flex justify-around basis-2/6">
         <NavLink href="/" text="Home" />
         <NavLink href="/about" text="About" />
