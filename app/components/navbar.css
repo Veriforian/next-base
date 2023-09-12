@@ -3,6 +3,12 @@ path {
 }
 
 nav {
-  & div {
+  & input:checked + & {
+    background-color: red;
   }
+}
+
+#burger:checked + div {
+  background-color: red;
+
 }
