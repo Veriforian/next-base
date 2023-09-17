@@ -2,13 +2,15 @@ path {
   fill: inherit;
 }
 
-nav {
-  & input:checked + & {
-    background-color: red;
-  }
+
+.closed {
+  opacity: 0;
+
+  transition: all .15s ease-in-out;
 }
 
-#burger:checked + div {
-  background-color: red;
+.open {
+  opacity: 1;
 
+  transition: all .15s ease-in-out;
 }

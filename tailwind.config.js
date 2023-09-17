@@ -12,9 +12,9 @@ module.exports = {
     },
     colors: {
       main: {
-        light: '',
+        light: '#20c997',
         medium: '#0ca678',
-        dark: '',
+        dark: '#099268',
       },
       light: {
         light: '',
@@ -32,9 +32,9 @@ module.exports = {
         dark: '',
       },
       black: {
-        light: '',
+        light: '#495057',
         medium: '#242228',
-        dark: '',
+        dark: '#212529',
       },
     },
   },
