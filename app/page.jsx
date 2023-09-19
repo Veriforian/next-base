@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Navbar } from './components';
+import { Navbar, Landing } from './components';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center w-full bg-white-medium text-black-medium">
       <Navbar />
-      <section>Section 1</section>
+      <Landing.Hero />
       <section>Section 2</section>
     </main>
   );
