@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center w-full bg-white-medium text-black-medium">
       <Navbar />
       <Landing.Hero />
-      <section>Section 2</section>
+      <Landing.WhyUs />
     </main>
   );
 }
