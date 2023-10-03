@@ -5,7 +5,7 @@ export function BtnSm({ children, className }) {
 }
 
 export function BtnMed({ children, className }) {
-  return <button type="button" className={`${className}`}>{children}</button>;
+  return <button type="button" className={`${className} py-1 rounded-full text-center px-3 flex items-center hover:text-white-medium transition-all delay-75 active:-translate-y-1 hover:ring-0`}>{children}</button>;
 }
 
 export function BtnTxt({ children, className }) {

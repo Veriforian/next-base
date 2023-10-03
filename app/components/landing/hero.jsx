@@ -6,7 +6,7 @@ import { BtnSm, BtnTxt } from '../buttons';
 
 function SectionLeftTop() {
   return (
-    <div className="flex flex-col justify-start w-full">
+    <div className="flex flex-col justify-start w-full px-6">
       <h1 className="text-5xl font-bold  text-main-light">
         Welcome to the
         {' '}
@@ -35,9 +35,9 @@ function SectionLeftTop() {
   );
 }
 
-function SectionRightBotton() {
+function SectionRightBottom() {
   return (
-    <div className="hero-right flex flex-col items-center justify-end w-full rounded-sm mt-14 px-10 py-20">
+    <div className="hero-right flex flex-col items-center justify-end w-full rounded-t-2xl mt-14 px-10 py-20">
       <article className="flex flex-col items-center justify-center w-full bg-light-medium rounded-md p-10 text-white-medium text-center ">
         <h4 className="text-lg font-bold">You need us</h4>
         <p>
@@ -53,9 +53,9 @@ function SectionRightBotton() {
 
 function Hero() {
   return (
-    <section id="hero" className="mt-20 px-6 flex flex-col items-center">
+    <section id="hero" className="mt-20 flex flex-col items-center">
       <SectionLeftTop />
-      <SectionRightBotton />
+      <SectionRightBottom />
     </section>
   );
 }
