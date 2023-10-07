@@ -36,6 +36,11 @@ module.exports = {
         medium: '#242228',
         dark: '#212529',
       },
+      opaque: {
+        light: 'rgba(0, 0, 0, 0.3)',
+        medium: 'rgba(0, 0, 0, 0.5)',
+        dark: 'rgba(0, 0, 0, 0.7)',
+      },
     },
   },
   plugins: [],
