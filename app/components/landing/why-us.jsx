@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 
-import './why-us.css';
 import { HeaderSection } from '../reusable';
 import { BtnMed } from '../buttons';
 
@@ -12,11 +11,11 @@ function WhyCard({
   return (
     <div
       id={id}
-      className={`${className} ${open ? 'h-auto p-10' : 'p-0 h-[0px]'} flex flex-col items-center justify-center w-full bg-cover text-white-medium text-center  transition-all delay-75 duration-200`}
+      className={`${className} ${open ? 'h-auto p-10' : 'p-0 h-[0px]'} relative flex flex-col items-center justify-center w-full bg-cover text-white-medium text-center  transition-all duration-[300ms]`}
     >
-      <div className={`${open ? 'block' : 'hidden'} bg-gradient-to-t from-opaque-dark to-opaque-dark py-2 rounded-lg `}>
-        <h4 className="text-lg font-bold">{title}</h4>
-        <p className="mt-2">
+      <div className={`${open ? 'block h-auto py-2' : 'hidden h-[0px] py-0'} relative bg-gradient-to-t from-opaque-dark to-opaque-dark rounded-lg transition-all duration-[300ms]`}>
+        <h4 className={`${open ? 'block h-auto' : 'hidden h-[0px]'} relative text-lg font-bold transition-all duration-[300ms]`}>{title}</h4>
+        <p className={`${open ? 'block h-auto' : 'hidden h-[0px]'} mt-2 transition-all relative duration-[300ms]`}>
           {children}
         </p>
       </div>
@@ -51,7 +50,7 @@ function WhyUs() {
             >
               <a href="#response" className="w-full">
                 {/* eslint-disable-next-line */}
-                <label htmlFor="why-response" className="w-full block text-left" onKeyDown={() => {setCertified(false); setExperienced(false); setResponse(true); }} onClick={() => { setCertified(false); setExperienced(false); setResponse(true); }}>
+                <label htmlFor="why-response" className="w-full block text-left hover:cursor-pointer" onKeyDown={() => {setCertified(false); setExperienced(false); setResponse(true); }} onClick={() => { setCertified(false); setExperienced(false); setResponse(true); }}>
                   Quick Response
                 </label>
               </a>
@@ -68,7 +67,7 @@ function WhyUs() {
             >
               <a href="#certified" className="w-full">
                 {/* eslint-disable-next-line */}
-                <label htmlFor="certifiedCheck" className="w-full block" onClick={() => {setResponse(false); setExperienced(false); setCertified(true)}} onKeyDown={() => {setResponse(false); setExperienced(false); setCertified(true)}}>
+                <label htmlFor="certifiedCheck" className="w-full block hover:cursor-pointer" onClick={() => {setResponse(false); setExperienced(false); setCertified(true)}} onKeyDown={() => {setResponse(false); setExperienced(false); setCertified(true)}}>
                   Certified
                 </label>
               </a>
@@ -85,7 +84,7 @@ function WhyUs() {
             >
               <a href="#experienced" className="w-full">
                 {/* eslint-disable-next-line */}
-                <label htmlFor="experiencedCheck" className="w-full block text-left" onKeyDown={() => {setResponse(false); setCertified(false); setExperienced(true)}} onClick={() => {setResponse(false); setCertified(false); setExperienced(true)}}>
+                <label htmlFor="experiencedCheck" className="w-full block text-left hover:cursor-pointer" onKeyDown={() => {setResponse(false); setCertified(false); setExperienced(true)}} onClick={() => {setResponse(false); setCertified(false); setExperienced(true)}}>
                   Experienced
                 </label>
               </a>

@@ -8,6 +8,7 @@ export default function Home() {
       <Navbar />
       <Landing.Hero />
       <Landing.WhyUs />
+      <Landing.Testimonials />
     </main>
   );
 }
